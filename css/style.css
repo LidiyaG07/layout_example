@@ -415,10 +415,6 @@ html, body {
   background-size: cover;
 }
 
-.hidden {
-  display: none;
-}
-
 .tabs__title {
   margin-bottom: 40px;
   font-weight: 400;
@@ -435,11 +431,12 @@ html, body {
   font-size: 24px;
   line-height: 32px;
   letter-spacing: -0.4px;
-  color: #CFD3D6;
+  color: #eee;
   opacity: 0.4;
+  cursor: pointer;
 }
 .tabs__list-title:hover {
-  color: #F5F6F7;
+  color: #eee;
 }
 .tabs .content {
   margin: 0;
@@ -468,4 +465,15 @@ html, body {
 }
 .tabs .content__right {
   grid-column: 8/7 span;
+}
+
+.hidden {
+  display: none;
+  text-decoration: none;
+  color: #CFD3D6;
+}
+
+.selected {
+  border-bottom: 1px solid #eee;
+  color: #eee;
 }

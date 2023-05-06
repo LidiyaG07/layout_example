@@ -341,9 +341,7 @@ html, body {
    }
 }
 
-.hidden {
-   display: none;
-}
+
 .tabs {
    &__title {
       margin-bottom: 40px;
@@ -362,11 +360,12 @@ html, body {
       font-size: 24px;
       line-height: 32px;
       letter-spacing: -0.4px;
-      color: #CFD3D6;
+      color: #eee;
       opacity: 0.4;
+      cursor: pointer;
 
       &:hover {
-         color: #F5F6F7;
+         color: #eee;
       }
    }
 
@@ -405,4 +404,14 @@ html, body {
    .content__right {
       grid-column: 8 / 7 span;
    }
+}
+.hidden {
+   display: none;
+   text-decoration: none;
+   color: #CFD3D6;
+}
+
+.selected {
+   border-bottom: 1px solid #eee;
+   color: #eee;
 }

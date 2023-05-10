@@ -360,13 +360,9 @@ html, body {
       font-size: 24px;
       line-height: 32px;
       letter-spacing: -0.4px;
-      color: #eee;
+      color: #cfd3d6;
       opacity: 0.4;
       cursor: pointer;
-
-      &:hover {
-         color: #eee;
-      }
    }
 
    .content {
@@ -411,7 +407,7 @@ html, body {
    color: #CFD3D6;
 }
 
-.selected {
-   border-bottom: 1px solid #eee;
-   color: #eee;
+.active-tab {
+   border-bottom: 1px solid #F5F6F7;
+   color: #F5F6F7;
 }

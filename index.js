@@ -1,14 +1,13 @@
-const tubsItem = document.querySelectorAll('.tabs__item');
-const tubsContent = document.querySelectorAll('.tabs__content');
+const tabsItem = document.querySelectorAll('.tabs__item');
+const tabsContent = document.querySelectorAll('.tabs__content');
 
-for (let item of tubsItem) {
+tabsItem.forEach(item => item.addEventListener('click', event => {
+   const tabsItemTarget = event.target.getAttribute('data-tab');
+   tabsItem.forEach(element => element.classList.remove('active-tab'));
+   tabsContent.forEach(element => element.classList.add('hidden'));
+   item.classList.add('active-tab');
+   document.getElementById(tabsItemTarget).classList.remove('hidden');
+}))
 
-   item.addEventListener('click', function() {
-      for (let element of tubsContent) {
-         element.classList.add('hidden')
-      }
-      const content = document.querySelector('#' + item.dataset.tab);
-      content.classList.remove('hidden').add('selected')
-   }
-   )
-}
+document.querySelector('[data-tab="tab-1"]').classList.add('active-tab');
+document.querySelector('#tab-1').classList.remove('hidden');

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Space+Grotesk:300,regular,500,600,700" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Test</title>
+</head>
+<body>
+    <div class="wrapper">
+      <section class="play-block">
+         <div class="play">
+            <div class="container">
+               <div class="play__body">
+                  <div class="play__tittle">Play any audio <br> sources directly in the browser!</div>
+                  <div class="play__link">
+                     <div class="link__discr">Insert the link</div>
+                     <div class="link__inp">
+                        <div class="inp__pl">
+                           <input class="inp"   type="url" placeholder="https://" class="inp__inp">
+                        </div>
+                        <button class="inp__btn"><img src="img/button.png" alt=""></button>
+                     </div>
+                  </div>
+                  <div class="play__discr">
+                     <div class="discr__text">Without any restrictions for free</div>
+                     <div class="play__text">
+                        <p>By uploading the audio file, you agree to our</p>
+                        <p><a href="#">Terms of Service.</a></p>
+                     </div>
+                  </div>
+                  
+               </div>   
+            </div>
+         </div>
+      </section>
+      <section class="descr-block">
+         <div class="descr">
+            <div class="container">
+               <div class="descr__body">
+                  <div class="body__left">
+                     <div class="body__title">How It Works</div>
+                     <div class="body__info">Lorem Ipsum is a "fish" text often used in print and web design. Lorem Ipsum has been the standard "fish" for Latin texts since the early 16th century. At that time, an unnamed printer created a large collection of font sizes and shapes, using Lorem Ipsum for print samples.</div>
+                  </div>
+                  <div class="body__right">
+                     <div class="body__img">
+                        <img src="img/Illustration.png" alt="diagram">
+                     </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="tabs-block">
+         <div class="tabs">
+            <div class="container">
+               <div class="tabs__title">Technical requirements</div>
+               <div class="tabs__nav">
+                  <ul class="tabs__list-title">
+                     <li data-tab="tab-1" class="tabs__item">Own server</li>
+                     <li data-tab="tab-2" class="tabs__item">Amazon Instance</li>
+                  </ul>
+               </div>   
+               <div id="tab-1" class="tabs__content hidden">
+                  <div class="content">
+                     <div class="content__left">
+                        <ul>
+                           <li class="tabs__list">OS + apps</li>
+                           <li class="tabs__list">Unix/OSX + docker + nvidia-docker</li>
+                        </ul>
+                        <ul>
+                           <li class="tabs__list">CPU</li>
+                           <li class="tabs__list">4 cores or more (e.g. intel core i5)</li>
+                        </ul>
+                        <ul>
+                           <li class="tabs__list">Memory</li>
+                           <li class="tabs__list">16 GB RAM</li>
+                        </ul>
+                     </div>
+                     <div class="content__right">
+                        <ul>
+                           <li class="tabs__list">Free space</li>
+                           <li class="tabs__list">100 GB of free space</li>
+                        </ul>
+                        <ul>
+                           <li class="tabs__list">Graphics hardware</li>
+                           <li class="tabs__list">GPU: NVidia only 2Gb+</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>     
+               <div id="tab-2" class="tabs__content hidden">
+                  <div class="content">
+                     <div class="content__left">
+                        <ul>
+                           <li class="tabs__list">Instance</li>
+                           <li class="tabs__list">g4dn.xlarge</li>
+                        </ul>
+                        <ul>
+                           <li class="tabs__list">GPU</li>
+                           <li class="tabs__list">1</li>
+                        </ul>
+                        <ul>
+                           <li class="tabs__list">vCPUs</li>
+                           <li class="tabs__list">4</li>
+                        </ul>
+                     </div>
+                     <div class="content__right">
+                        <ul>
+                           <li class="tabs__list">Memory</li>
+                           <li class="tabs__list">16 GB RAM</li>
+                        </ul>
+                        <ul>
+                           <li class="tabs__list">Storage</li>
+                           <li class="tabs__list">125 GB</li>
+                        </ul>
+                     </div>
+
+                  </div>
+               </div>            
+            </div>
+         </div>
+      </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

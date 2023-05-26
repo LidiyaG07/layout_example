@@ -31,12 +31,15 @@ html, body {
 .container {
    max-width: 1336px;
    overflow: hidden;
+   padding: 0px 10px;
+
 
    @media (max-width: 1200px) {
       flex-wrap: wrap;
       max-width: 1100px;
    }
    @media (max-width: 600px) {
+      padding: 0px 10px;
       max-width: 520px;
    }
 }
@@ -360,8 +363,8 @@ html, body {
       font-size: 24px;
       line-height: 32px;
       letter-spacing: -0.4px;
-      color: #cfd3d6;
-      opacity: 0.4;
+      color: #878e93;
+      // opacity: 0.4;
       cursor: pointer;
    }
 
@@ -376,6 +379,11 @@ html, body {
          width: 250px;
       }
 
+      @media (max-width: 768px) {
+         display: flex;
+         flex-direction: column;
+      }
+
    }
 
    .content ul {
@@ -388,9 +396,13 @@ html, body {
       line-height: 32px;
       letter-spacing: -0.4px;
       color: #EEEEEE;
+
+      @media (max-width: 400px) {
+         display: flex;
+         flex-direction: column;
+         border-bottom: none;
+      }
    }
-
-
 
    .content__left {
       grid-column: 1 / 7 span;
@@ -409,5 +421,5 @@ html, body {
 
 .active-tab {
    border-bottom: 1px solid #F5F6F7;
-   color: #F5F6F7;
+   color: #eeeeee;
 }
